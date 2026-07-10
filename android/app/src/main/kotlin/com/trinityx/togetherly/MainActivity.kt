@@ -24,6 +24,21 @@ class MainActivity : FlutterFragmentActivity() {
 
     private val CHANNEL = "com.trinityx.togetherly/love_buddy_widget"
 
+    // ✅ FIX: আগে LoveBuddyLiveService শুধুমাত্র তখনই চালু হতো যখন Dart সাইড থেকে
+    // MethodChannel-এ "startWidgetSync" কল করা হতো — কিন্তু মেইন অ্যাপের কোনো
+    // action flow-তে এই কলটা যুক্ত করা ছিল না, ফলে সার্ভিসটা কখনোই চালু হচ্ছিল না
+    // (তাই widget-এ কোনো ডেটা/ছবি লোড হচ্ছিল না, auto-update হচ্ছিল না)।
+    //
+    // এখন অ্যাপ চালু হওয়ার সাথে সাথেই (এই Activity তৈরি হলেই) নেটিভভাবে সার্ভিসটা
+    // চালু করে দেওয়া হচ্ছে — কোনো Dart/FlutterFlow action flow যুক্ত করার দরকার
+    // নেই। সার্ভিসের ভেতরের FirebaseAuth.AuthStateListener নিজে থেকেই ঠিক করে
+    // নেবে ইউজার লগইন করা আছে কিনা — লগইন থাকলে সাথে সাথে ডেটা লোড শুরু হবে,
+    // পরে লগইন করলে তখনই শুরু হবে, লগআউট করলে নিজে থেকেই শোনা বন্ধ করে দেবে।
+    override fun onCreate(savedInstanceState: android.os.Bundle?) {
+        super.onCreate(savedInstanceState)
+        startForegroundServiceCompat(Intent(this, LoveBuddyLiveService::class.java))
+    }
+
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
 

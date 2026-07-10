@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="send_love_button">❤️ Enviar amor</string>
+
+    <string name="status_next_reunion">Próximo reencuentro en</string>
+    <string name="status_days_pattern">%1$d días</string>
+
+    <string name="status_love_line1">%1$s te envió</string>
+    <string name="status_love_line2">¡amor! ❤️</string>
+
+    <string name="status_getting_ready_line1">%1$s se está</string>
+    <string name="status_getting_ready_line2">preparando!</string>
+    <string name="status_trip_starts_soon">✈️ El viaje empieza pronto</string>
+
+    <string name="status_on_the_way_line1">%1$s va de camino</string>
+    <string name="status_on_the_way_line2">hacia %1$s</string>
+    <string name="status_km_to_go">✈️ %1$d km por recorrer</string>
+
+    <string name="status_together_line1">Juntos</string>
+    <string name="status_together_line2">de nuevo! ❤️</string>
+    <string name="distance_together_label">Juntos de nuevo ❤️</string>
+
+    <string name="status_good_night">Buenas noches</string>
+    <string name="status_my_love">mi amor</string>
+
+    <string name="status_happy_birthday">Feliz cumpleaños</string>
+    <string name="status_birthday_both_line2">a los dos! 🎉</string>
+    <string name="birthday_wish_button">🎂 Deseo de cumpleaños</string>
+
+    <string name="distance_km_apart">%1$d km de distancia</string>
+
+    <plurals name="time_diff_hours">
+        <item quantity="one">🕐 %1$d hora de diferencia</item>
+        <item quantity="other">🕐 %1$d horas de diferencia</item>
+    </plurals>
+</resources>

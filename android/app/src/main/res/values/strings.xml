@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">Togly</string>
+
+    <!-- ✅ Love-Buddy home-screen widget strings -->
+    <string name="send_love_button">❤️ Send Love</string>
+
+    <string name="status_next_reunion">Next reunion in</string>
+    <string name="status_days_pattern">%1$d days</string>
+
+    <string name="status_love_line1">%1$s sent you</string>
+    <string name="status_love_line2">love! ❤️</string>
+
+    <string name="status_getting_ready_line1">%1$s is getting</string>
+    <string name="status_getting_ready_line2">ready!</string>
+    <string name="status_trip_starts_soon">✈️ Trip starts soon</string>
+
+    <string name="status_on_the_way_line1">%1$s is on the way</string>
+    <string name="status_on_the_way_line2">to %1$s</string>
+    <string name="status_km_to_go">✈️ %1$d km to go</string>
+
+    <string name="status_together_line1">Together</string>
+    <string name="status_together_line2">again! ❤️</string>
+    <string name="distance_together_label">Together again ❤️</string>
+
+    <string name="status_good_night">Good night</string>
+    <string name="status_my_love">my love</string>
+
+    <string name="status_happy_birthday">Happy Birthday</string>
+    <string name="status_birthday_both_line2">to both of you! 🎉</string>
+    <string name="birthday_wish_button">🎂 Birthday Wish</string>
+
+    <string name="distance_km_apart">%1$d km apart</string>
+
+    <plurals name="time_diff_hours">
+        <item quantity="one">🕐 %1$d hour between you</item>
+        <item quantity="other">🕐 %1$d hours between you</item>
+    </plurals>
+</resources>

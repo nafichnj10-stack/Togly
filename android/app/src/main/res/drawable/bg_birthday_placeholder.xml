@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ✅ Birthday state-এর জন্য placeholder background — আসল birthday_dog.png /
+    birthday_cat.png / birthday_both.png আর্টওয়ার্ক না আসা পর্যন্ত এটাই দেখাবে।
+    এখানে অ্যাপের গোলাপি/বেগুনি থিমের সাথে মানানসই একটা উৎসবের gradient
+    আর কিছু কনফেটি-সদৃশ বৃত্ত ব্যবহার করা হয়েছে।
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="135"
+                android:startColor="#FF7BC8"
+                android:centerColor="#C77DFF"
+                android:endColor="#7B2FBE" />
+        </shape>
+    </item>
+    <item android:gravity="top|left" android:top="14dp" android:left="20dp">
+        <shape android:shape="oval">
+            <size android:width="8dp" android:height="8dp" />
+            <solid android:color="#FFF6C244" />
+        </shape>
+    </item>
+    <item android:gravity="top|right" android:top="26dp" android:right="30dp">
+        <shape android:shape="oval">
+            <size android:width="6dp" android:height="6dp" />
+            <solid android:color="#FFFFFFFF" />
+        </shape>
+    </item>
+    <item android:gravity="bottom|left" android:bottom="40dp" android:left="40dp">
+        <shape android:shape="oval">
+            <size android:width="5dp" android:height="5dp" />
+            <solid android:color="#FFFFE9F5" />
+        </shape>
+    </item>
+    <item android:gravity="top|right" android:top="10dp" android:right="70dp">
+        <shape android:shape="oval">
+            <size android:width="5dp" android:height="5dp" />
+            <solid android:color="#FFF6C244" />
+        </shape>
+    </item>
+</layer-list>

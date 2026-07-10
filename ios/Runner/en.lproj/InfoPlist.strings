@@ -1,0 +1,4 @@
+NSCameraUsageDescription = "Togly uses your camera so you can take photos for your partner and add them to Love Treasure surprises.";
+NSPhotoLibraryUsageDescription = "Allow Togetherly to save photos to your library";
+NSMicrophoneUsageDescription = "Togly uses your microphone so you can record voice messages for your partner and add them to Love Treasure surprises.";
+NSLocationWhenInUseUsageDescription = "Togly uses your location during your journey so your partner can follow your travel progress. Your exact location is never shared.";

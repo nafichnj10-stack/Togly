@@ -1,4 +1,4 @@
-# Togly 2 - 0
+# Firebase Storage library
 
 A new Flutter project.
 
